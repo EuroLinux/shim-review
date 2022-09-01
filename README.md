@@ -203,7 +203,7 @@ shim.eurolinux,1,EuroLinux,shim,15.6,security@euro-linux.com
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 grub,2,Free Software Foundation,grub,2.02,https//www.gnu.org/software/grub/
 grub.rh,2,Red Hat,grub2,2.02-123.el8_6.8,mailto:secalert@redhat.com
-grub.eurolinux,2,EuroLinux,grub2,2.02-123.el8_6.8,mailto:security@euro-linux.com
+grub.eurolinux,1,EuroLinux,grub2,2.02-123.el8_6.8,mailto:security@euro-linux.com
 ```
 
 `fwupd`
