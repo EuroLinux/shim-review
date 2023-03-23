@@ -9,12 +9,17 @@ Confirm the following are included in your repo, checking each box:
  - [x] build logs
  - [x] a Dockerfile to reproduce the build of the provided shim EFI binaries
 
--------------------------------------------------------------------------------
+*******************************************************************************
 ### What is the link to your tag in a repo cloned from rhboot/shim-review?
--------------------------------------------------------------------------------
-`https://github.com/EuroLinux/shim-review/tree/eurolinux-shim-x86_64-20220702`
+*******************************************************************************
+`https://github.com/EuroLinux/shim-review/tree/eurolinux-shim-x86_64-20221201`
 
--------------------------------------------------------------------------------
+*******************************************************************************
 ### What is the SHA256 hash of your final SHIM binary?
--------------------------------------------------------------------------------
-9103237187d50053b4dbe37f24851af36c7adfd00de2eab8c1dc83d2706fa43e
+*******************************************************************************
+3ab92d000ba64ecca838ddecdae51ccb745d67de3e030813959ab46562b732f4
+
+*******************************************************************************
+### What is the link to your previous shim review request (if any, otherwise N/A)?
+*******************************************************************************
+https://github.com/rhboot/shim-review/issues/258
