@@ -1,11 +1,32 @@
-FROM oraclelinux:9
+FROM eurolinux/eurolinux-9:eurolinux-9-9.0.13
+RUN echo -e '\
+[baseos-9.1]\n\
+name = EL 9.1 BaseOS\n\
+baseurl=https://vault.cdn.euro-linux.com/legacy/eurolinux/9/9.1/BaseOS/x86_64/os/\n\
+enabled=1\n\
+gpgcheck=1\n\
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-eurolinux9\n\
+\n\
+[appstream-9.1]\n\
+name = EL 9.1 AppStream\n\
+baseurl=https://vault.cdn.euro-linux.com/legacy/eurolinux/9/9.1/AppStream/x86_64/os/\n\
+enabled=1\n\
+gpgcheck=1\n\
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-eurolinux9\n\
+\n\
+[crb-9.1]\n\
+name = EL 9.1 CRB\n\
+baseurl=https://vault.cdn.euro-linux.com/legacy/eurolinux/9/9.1/CRB/x86_64/os/\n\
+enabled=1\n\
+gpgcheck=1\n\
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-eurolinux9\n\
+' > /etc/yum.repos.d/eurolinux.repo
 RUN dnf -y install openssl openssl-devel pesign wget dos2unix \
                    rpm-build gcc make elfutils-libelf-devel git
 ADD shim-unsigned-x64-15.7-1.el9.src.rpm /
 RUN echo -e '%_topdir /builddir/build/\n%_tmp %{_topdir}/tmp' > /root/.rpmmacros
 RUN rpm -ivh shim-unsigned-x64-15.7-1.el9.src.rpm
 RUN sed -i 's/linux32 -B/linux32/g' /builddir/build/SPECS/shim-unsigned-x64.spec
-RUN sed -i 's/ol/eurolinux/g' /etc/os-release
 RUN rpmbuild -bb /builddir/build/SPECS/shim-unsigned-x64.spec
 COPY shimx64.efi /
 RUN ls -lh --time-style=long-iso /builddir/build/RPMS/x86_64 | cut -d' ' -f5-8
