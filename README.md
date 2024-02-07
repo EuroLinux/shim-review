@@ -57,7 +57,8 @@ review](https://github.com/rhboot/shim-review/issues/258).
 - Name: [Jarosław Mazurkiewicz](https://github.com/jaromaz)
 - Position: Senior DevOps Engineer
 - Email address: jm@euro-linux.com
-- [PGP key](pgp/jm.pub) fingerprint: B556 5E94 789A 8E43 318A  517B 0C83 B15E 33E3 1BCC
+- [PGP key](pgp/jm.pub) fingerprint: EF0F D0ED C434 B608 079B  49C9 6695 4374 173C D866
+
 
 (Key should be signed by the other security contacts, pushed to a keyserver
 like keyserver.ubuntu.com, and preferably have signatures that are reasonably
@@ -275,7 +276,7 @@ N/A: we haven't yet received a signed shim binary from Microsoft.
 *******************************************************************************
 ### What is the SHA256 hash of your final SHIM binary?
 *******************************************************************************
-0f7bb8367d53e5cb37faabb8a731dc1664329f0713b12a85d67b38e9bd853893
+c6763bf19239ad8437dde50d8263b6ab776e0ecbb48cab85d55fe3e97771ae79
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your SHIM?
