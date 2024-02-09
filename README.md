@@ -401,8 +401,8 @@ RHEL patches only for Secure Boot support
 *******************************************************************************
 ### Add any additional information you think we may need to validate this shim.
 *******************************************************************************
-Security contacts have not changed since [this
-review](https://github.com/rhboot/shim-review/issues/258)
+The key pair of the primary contact has changed since [this application
+](https://github.com/rhboot/shim-review/issues/258)
 
 While the [last review](https://github.com/rhboot/shim-review/issues/327) got
 accepted, we haven't yet received a signed binary from Microsoft and it's been
