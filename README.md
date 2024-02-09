@@ -51,14 +51,10 @@ The security contacts need to be verified before the shim can be accepted. For s
 An authorized reviewer will initiate contact verification by sending each security contact a PGP-encrypted email containing random words.
 You will be asked to post the contents of these mails in your `shim-review` issue to prove ownership of the email addresses and PGP keys.
 *******************************************************************************
-Both the contacts below have already been verified in the [version 8
-review](https://github.com/rhboot/shim-review/issues/258).
-
 - Name: [Jarosław Mazurkiewicz](https://github.com/jaromaz)
 - Position: Senior DevOps Engineer
 - Email address: jm@euro-linux.com
 - [PGP key](pgp/jm.pub) fingerprint: EF0F D0ED C434 B608 079B  49C9 6695 4374 173C D866
-
 
 (Key should be signed by the other security contacts, pushed to a keyserver
 like keyserver.ubuntu.com, and preferably have signatures that are reasonably
